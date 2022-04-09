@@ -4,10 +4,47 @@ html
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     title Encephaloprints
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap')
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css')
     link(rel='stylesheet' href='style.css')
+
   body
-    h1 Encephaloprints
-    p An interactive installation in which generative visuals react in realtime to brain activity read from an EEG headband. This project aims to connect mind and matter to create a dynamic "fingerprint" of the viewer's mind.
+    h1 #[i Encephaloprints], 2022
+    h2: small An interactive installation in which generative visuals react in realtime to brain activity read from an EEG headset. This project aims to connect mind and matter to create a dynamic "fingerprint" of the viewer's mind.
+    p Throughout the day, our mind flows between different states of focus, distraction, stress, relaxation, and so on. How the mind flows between these mental states can be affected by external or internal stimuli; each person has their own unique way of falling in and out of these states.
+    p We never really get the chance to see our minds' flowing patterns; instead, we express our mental state through facial expressions, body language, verbal cues, and physical actions. #[i Encephaloprints] provides users with the opportunity to see just how similar yet unique each person's mind can be.
+    table
+      thead
+        tr
+          th Data Value
+          th Effect on Artwork
+      tbody
+        tr
+          td Head movements
+          td Rotation
+        tr
+          td Raw EEG
+          td Color hue
+        tr
+          td Stress
+          td Color saturation
+        tr
+          td Excitement
+          td Hue change + pulse speed
+        tr
+          td Focus
+          td Size
+        tr
+          td Relaxation
+          td Movement speed
+    p Links:
+    ul
+      li: a(href='encephaloprints.toe' download) TouchDesigner source file (.toe)
+      li: a(href='https://bennyboy.tech/capstone' target='_blank') Process blog
+
+    h2 About the Artist
+    p Benjamin Pang is a primarily self-taught artist and programmer from San Francisco, CA and a final-year Interactive Media major at NYU Abu Dhabi.
+    p With a background in software development and the sciences, he mainly deals with interactive installations, multimedia experiences, and CGI/VFX art. Drawing influences from a wide variety of classical and contemporary artists, music, digital multimedia, and personal experiences, his work explores sensory confusion, coping mechanisms, and loneliness in the post-digital age.
+    p He is currently making and posting CGI "everydays" online under the alias BandidoJim.
 
     script(src='main.js')
